@@ -1,118 +1,183 @@
-/* Login.css */
-
-/* Container for the login form */
+/* Centering the login container */
 .login-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-  
-  /* Title of the form */
-  .login-container h2 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Subtitle below the title */
-  .login-container p {
-    text-align: center;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  /* Form field containers */
-  .form-field {
-    margin-bottom: 15px;
-  }
-  
-  .form-field label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  /* Input fields */
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Password input field with position for the show password button */
-  .password-field {
-    position: relative;
-  }
-  
-  /* Button to toggle the password visibility */
-  .show-password-button {
-    position: absolute;
-    right: 10px;
-    top: 38px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* "Remember me" and "Forgot Password" section */
-  .remember-forgot {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Submit button */
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #6c63ff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* OR separator */
-  .or-separator {
-    text-align: center;
-    margin: 20px 0;
-    color: #666;
-  }
-  
-  /* Social login buttons */
-  .social-login-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .social-login-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .facebook-button {
-    background-color: #3b5998;
-    color: #fff;
-  }
-  
-  .google-button {
-    background-color: #db4437;
-    color: #fff;
-  }
-  
-  /* Register link section */
-  .register-link {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .register-link a {
-    color: #6c63ff;
-  }
-  
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f0f8ff; /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* Dark blue title */
+}
+
+.login-container p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form field styling */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #1e3a8a; /* Dark blue for label */
+}
+
+/* Input fields */
+.input-field {
+  width: 90%;
+  max-width: 350px;
+  padding: 12px;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #1e3a8a; /* Dark blue border on focus */
+  box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
+}
+
+/* Password field container */
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 350px;
+  margin: 5px auto;
+}
+
+/* Show password button */
+.show-password-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.show-password-button:hover {
+  color: #1e3a8a; /* Dark blue hover effect */
+}
+
+/* Remember me & Forgot Password */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 350px;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.remember-forgot a {
+  color: #1e3a8a; /* Dark blue links */
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button animation */
+.submit-button {
+  width: 90%;
+  max-width: 350px;
+  padding: 12px;
+  background-color: #1e3a8a; /* Dark blue background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #3b82f6; /* Light blue on hover */
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.95);
+}
+
+/* OR separator */
+.or-separator {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Social login buttons */
+.social-login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-login-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+}
+
+.facebook-button:hover {
+  background-color: #2d4373;
+}
+
+.google-button {
+  background-color: #db4437;
+}
+
+.google-button:hover {
+  background-color: #b53024;
+}
+
+/* Register link */
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1e3a8a; /* Dark blue register link */
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
